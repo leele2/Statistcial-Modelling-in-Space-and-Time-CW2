@@ -1,0 +1,42 @@
+% !TeX root = main.tex
+\documentclass[british]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{mathtools}
+\usepackage[margin=1.5cm]{geometry}
+\usepackage{float}
+\usepackage{listings}
+\usepackage{hyperref}
+\usepackage{amssymb}
+\usepackage{enumerate}
+\usepackage[shortlabels]{enumitem}
+\usepackage{subcaption}
+\usepackage{xr}
+\usepackage{graphicx}
+\usepackage[demo]{rotating}
+\usepackage{wrapfig}
+\usepackage{ragged2e}
+\usepackage{multicol}
+\usepackage{textcomp, gensymb}
+\usepackage[useregional]{datetime2}[showzone=false]
+\RequirePackage{xkeyval}
+\RequirePackage{etoolbox}
+\usepackage{csvsimple, booktabs, siunitx}
+
+% Custom configurations and commands
+\input{PreAmble/PreAmble.tex}
+
+\begin{document}
+\input{Title.tex}
+\input{Sections/Intro/intro}
+\input{Sections/DataIntegretity/S1}
+\input{Sections/ARIMA/S2.tex}
+% \begingroup
+% \RaggedRight
+\bibliographystyle{alpha}
+\bibliography{mybibliography.bib}
+% \endgroup
+
+%\input{Appendix/appendix}
+
+\end{document}

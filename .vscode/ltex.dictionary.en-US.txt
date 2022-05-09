@@ -1,0 +1,6 @@
+ARMA
+ARMA
+ARMA
+PACF
+ARIMA
+stationarity

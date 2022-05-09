@@ -1,0 +1,3 @@
+      year          month             day            hour           Quarter      Days_since_start Overturning_Strength
+ Min.   :2004   Min.   : 1.000   Min.   : 1.0   Min.   : 0.000   Min.   :1.000   Min.   :   1.0   Min.   :-3.073      
+ Max.   :2014   Max.   :12.000   Max.   :31.0   Max.   :12.000   Max.   :4.000   Max.   :3642.0   Max.   :30.822      

@@ -1,0 +1,1 @@
+The minimum pair of $(p,q)$ when minimizing the Sum of AIC and BIC is $p$ = 0 and $q$ = 1
