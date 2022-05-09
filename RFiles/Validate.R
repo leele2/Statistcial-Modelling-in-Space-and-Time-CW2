@@ -2,8 +2,8 @@
 sav_dir <- paste0(substr(wd, 1, 149), "Latex_Files/Statistical-Modelling-in-Sp",
                   "ace-and-Time---CW2/Main/Sections/DataIntegretity")
 i_sz <- 5*(1)
-i_sz <- c(i_sz[1], (60/35) * i_sz[1], 600, 14)
-theme0 <- theme(title = element_text(size = i_sz[4] + 2, hjust = 0.5),
+i_sz <- c(i_sz[1], (60/35) * i_sz[1], 300, 14)
+theme0 <- theme(title = element_text(size = 1.2 * floor(i_sz[4]), hjust = 0.5),
                 axis.title = element_text(size = i_sz[4]),
                 axis.text = element_text(size = i_sz[4]))
 ##          ##
