@@ -1,1 +1,1 @@
-The minimum pair of $(p,q)$ when minimizing the AIC is $p$ = 3 and $q$ = 0
+The minimum pair hello of $(p,q)$ when minimizing the AIC is $p$ = 2 and $q$ = 3

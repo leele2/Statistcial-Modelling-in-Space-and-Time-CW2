@@ -39,9 +39,9 @@ mins[3, ] <- which(sIc == min(sIc), arr.ind = TRUE)
 #Outputting minimum combinations
 tmp <- c("AIC", "BIC", "Sum of AIC and BIC")
 for (i in c(1:3)){
-  output <- paste0("The minimum pair of $(p,q)$ when minimizing the ", tmp[i],
+  output <- paste0("The minimum pair hello of $(p,q)$ when minimizing the ", tmp[i],
                    " is $p$ = ", mins[i, 1] - 1, " and $q$ = ", mins[i, 2] - 1)
-  writeLines(paste0(sav_dir, "/Outputs/", "min", i, ".txt"))
+  writeLines(output, paste0(sav_dir, "/Outputs/", "min", i, ".txt"))
 }
 output = sIc
 colnames(output) <- 0:(length(q_vals) - 1)
@@ -50,5 +50,5 @@ rm(aIc, bIc, sIc, mins, tmp, p_vals, q_vals, i)
 write.table(as.data.frame(round(output, 2)) %>% rownames_to_column('p/q'),
             paste0(substr(sav_dir, 1, 212),"S2tab1.csv"), quote = F,
             sep = ",", row.names = F)
-rm(output)
+rm(output, sav_dir)
 ##                                        ##

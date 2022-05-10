@@ -45,5 +45,5 @@ tmp <- autoplot(data_mean.ts, main = "Overturning Strength Time Series",
                 theme0
 print(tmp)
 dev.off()
-rm(tmp)
+rm(tmp, i_sz, theme0, sav_dir)
 ##                 ##

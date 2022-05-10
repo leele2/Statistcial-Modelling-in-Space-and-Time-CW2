@@ -1,1 +1,1 @@
-The minimum pair of $(p,q)$ when minimizing the BIC is $p$ = 0 and $q$ = 1
+The minimum pair hello of $(p,q)$ when minimizing the BIC is $p$ = 0 and $q$ = 1
