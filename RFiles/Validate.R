@@ -2,11 +2,6 @@
 sav_dir <- paste0(substr(wd, 1, str_locate(wd, " 2/")[2]), "Latex_File",
   "s/Statistical-Modelling-in-Space-and-Time---CW2/Main/Section",
   "s/DataIntegretity")
-i_sz <- 5*(1)
-i_sz <- c(i_sz[1], (60/35) * i_sz[1], 300, 14)
-theme0 <- theme(title = element_text(size = 1.2 * floor(i_sz[4]), hjust = 0.5),
-                axis.title = element_text(size = i_sz[4]),
-                axis.text = element_text(size = i_sz[4]))
 ##          ##
 
 ## Validating Data ##
@@ -36,7 +31,7 @@ ggplot(data[as.numeric(Boxplot(data$Overturning_Strength ~ data$month,
   xlab("Time") +
   ylab("Overturning Strength (Sv)") +
   theme0
-ggsave(paste0(sav_dir, "/Plots/outliers.png"), device = NULL, 
+ggsave(paste0(sav_dir, "/Plots/outliers.png"), device = NULL,
       height = i_sz[1], width = i_sz[2], units = "in", dpi = i_sz[3])
 ##Plotting original data
 png(paste0(sav_dir, "/Plots/orig.png"), i_sz[2], i_sz[1],

@@ -6,7 +6,8 @@ sav_dir <- paste0(substr(wd, 1, str_locate(wd, " 2/")[2]), "Latex_File",
 ## Plotting ACF and PACF ##
 png(paste0(sav_dir, "/Plots/ACF.png"), 600, 350)
 plot(acf(data_mean.ts, lag.max = 40),
-     main = "ACF of Quarterly Means", xlab = "Lag (years)")
+     main = "ACF of Quarterly Means", xlab = "Lag (years)",
+     cex.lab = i_sz[5], cex.main = i_sz[5])
 dev.off()
 png(paste0(sav_dir, "/Plots/PACF.png"), 600, 350)
 plot(pacf(data_mean.ts, lag.max = 40),
@@ -48,7 +49,7 @@ colnames(output) <- 0:(length(q_vals) - 1)
 rownames(output) <- 0:(length(p_vals) - 1)
 rm(aIc, bIc, sIc, mins, tmp, p_vals, q_vals, i)
 write.table(as.data.frame(round(output, 2)) %>% rownames_to_column('p/q'),
-            paste0(substr(sav_dir, 1, 212),"S2tab1.csv"), quote = F,
-            sep = ",", row.names = F)
+            paste0(substr(sav_dir, 1, str_locate(sav_dir, "Main/")[2]),
+            "S2tab1.csv"), quote = F, sep = ",", row.names = F)
 rm(output, sav_dir)
 ##                                        ##
