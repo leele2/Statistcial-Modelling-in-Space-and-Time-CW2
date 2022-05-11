@@ -1,6 +1,6 @@
 ## Preamble ##
-sav_dir <- paste0(substr(wd, 1, 149), "Latex_Files/Statistical-Modelling-in-Sp",
-                  "ace-and-Time---CW2/Main/Sections/ARIMA")
+sav_dir <- paste0(substr(wd, 1, str_locate(wd, " 2/")[2]), "Latex_File",
+  "s/Statistical-Modelling-in-Space-and-Time---CW2/Main/Sections/ARIMA")
 ##          ##
 
 ## Plotting ACF and PACF ##
