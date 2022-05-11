@@ -1,7 +1,6 @@
 ## Preamble ##
-sav_dir <- paste0(substr(wd, 1, str_locate(wd, " 2/")[2]), "Latex_File",
-  "s/Statistical-Modelling-in-Space-and-Time---CW2/Main/Section",
-  "s/DataIntegretity")
+sav_dir <- paste0(source, "/Latex_Files/Statistical-Modelling-in-Space-and-Ti",
+  "me---CW2/Main/Sections/DataIntegretity")
 ##          ##
 
 ## Validating Data ##
@@ -41,5 +40,5 @@ tmp <- autoplot(data_mean.ts, main = "Overturning Strength Time Series",
                 theme0
 print(tmp)
 dev.off()
-rm(tmp, i_sz, theme0, sav_dir)
+rm(tmp, sav_dir)
 ##                 ##

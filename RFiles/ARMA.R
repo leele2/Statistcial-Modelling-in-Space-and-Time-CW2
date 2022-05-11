@@ -1,17 +1,18 @@
 ## Preamble ##
-sav_dir <- paste0(substr(wd, 1, str_locate(wd, " 2/")[2]), "Latex_File",
-  "s/Statistical-Modelling-in-Space-and-Time---CW2/Main/Sections/ARIMA")
+sav_dir <- paste0(source, "/Latex_Files/Statistical-Modelling-in-Space-and-Tim",
+  "e---CW2/Main/Sections/ARIMA")
 ##          ##
 
 ## Plotting ACF and PACF ##
 png(paste0(sav_dir, "/Plots/ACF.png"), 600, 350)
 plot(acf(data_mean.ts, lag.max = 40),
-     main = "ACF of Quarterly Means", xlab = "Lag (years)",
-     cex.lab = i_sz[5], cex.main = i_sz[5])
+     main = NA, xlab = "Lag (years)", cex.lab = i_sz[5])
+title(main = "ACF of Quarterly Means", cex.main = i_sz[5])
 dev.off()
 png(paste0(sav_dir, "/Plots/PACF.png"), 600, 350)
 plot(pacf(data_mean.ts, lag.max = 40),
-     main = "PACF of Quarterly Means", xlab = "Lag (years)")
+     main = NA, xlab = "Lag (years)", cex.lab = i_sz[5])
+title(main = "PACF of Quarterly Means", cex.main = i_sz[5])
 dev.off()
 ##                       ##
 
@@ -24,7 +25,7 @@ sIc <- matrix(0, length(p_vals), length(q_vals))
 #Calculating AIC and BIC for each different (p,q) combinations
 for (i in c(1:length(p_vals))){
   for (j in c(1:length(q_vals))){
-    tmp <- arima(data_mean.ts, order = c(as.numeric(p_vals[i]), 0,
+    tmp <- Arima(data_mean.ts, order = c(as.numeric(p_vals[i]), 0,
                                          as.numeric(q_vals[j])))
     aIc[i, j] <- AIC(tmp)
     bIc[i, j] <- BIC(tmp)
@@ -47,9 +48,11 @@ for (i in c(1:3)){
 output = sIc
 colnames(output) <- 0:(length(q_vals) - 1)
 rownames(output) <- 0:(length(p_vals) - 1)
-rm(aIc, bIc, sIc, mins, tmp, p_vals, q_vals, i)
+rm(aIc, bIc, sIc, tmp, p_vals, q_vals, i)
 write.table(as.data.frame(round(output, 2)) %>% rownames_to_column('p/q'),
             paste0(substr(sav_dir, 1, str_locate(sav_dir, "Main/")[2]),
             "S2tab1.csv"), quote = F, sep = ",", row.names = F)
 rm(output, sav_dir)
+
+fit <- Arima(data_mean.ts, order = c(mins[3, 1] - 1, 0 , mins[3, 2] - 1))
 ##                                        ##

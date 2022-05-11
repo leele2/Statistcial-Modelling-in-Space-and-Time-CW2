@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.5.3)  11 MAY 2022 13:28
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.5.3)  11 MAY 2022 19:36
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -547,28 +547,28 @@ File: dvipsnam.def 2016/06/17 v3.0m Driver-dependent file (DPC,SPQR)
 Package hyperref Info: Option `frenchlinks' set `false' on input line 43.
 Package hyperref Info: Option `colorlinks' set `true' on input line 43.
 )
-Package translations Info: No language package found. I am going to use `english' as default language. on input line 29.
+Package translations Info: No language package found. I am going to use `english' as default language. on input line 28.
  (out/main.aux)
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 29.
-LaTeX Font Info:    ... okay on input line 29.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 29.
-LaTeX Font Info:    ... okay on input line 29.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 29.
-LaTeX Font Info:    ... okay on input line 29.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 29.
-LaTeX Font Info:    ... okay on input line 29.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 29.
-LaTeX Font Info:    ... okay on input line 29.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 29.
-LaTeX Font Info:    ... okay on input line 29.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 29.
-LaTeX Font Info:    ... okay on input line 29.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 29.
-LaTeX Font Info:    ... okay on input line 29.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 29.
-LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 28.
+LaTeX Font Info:    ... okay on input line 28.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 28.
+LaTeX Font Info:    ... okay on input line 28.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 28.
+LaTeX Font Info:    ... okay on input line 28.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 28.
+LaTeX Font Info:    ... okay on input line 28.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 28.
+LaTeX Font Info:    ... okay on input line 28.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 28.
+LaTeX Font Info:    ... okay on input line 28.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 28.
+LaTeX Font Info:    ... okay on input line 28.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 28.
+LaTeX Font Info:    ... okay on input line 28.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 28.
+LaTeX Font Info:    ... okay on input line 28.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -605,7 +605,7 @@ LaTeX Font Info:    ... okay on input line 29.
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
 \c@lstlisting=\count336
-Package hyperref Info: Link coloring ON on input line 29.
+Package hyperref Info: Link coloring ON on input line 28.
 (c:/texlive/2022/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2021-04-02 v2.47 Cross-referencing by name of section
  (c:/texlive/2022/texmf-dist/tex/latex/refcount/refcount.sty
@@ -615,9 +615,9 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
 \c@section@level=\count337
 )
-LaTeX Info: Redefining \ref on input line 29.
-LaTeX Info: Redefining \pageref on input line 29.
-LaTeX Info: Redefining \nameref on input line 29.
+LaTeX Info: Redefining \ref on input line 28.
+LaTeX Info: Redefining \pageref on input line 28.
+LaTeX Info: Redefining \nameref on input line 28.
  (out/main.out) (out/main.out)
 \@outlinefile=\write4
 \openout4 = `main.out'.
@@ -647,24 +647,24 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 ))
 \symgns@font=\mathgroup6
 LaTeX Font Info:    Overwriting symbol font `gns@font' in version `bold'
-(Font)                  TS1/cmr/m/n --> TS1/cmr/b/n on input line 29.
-Package gensymb Info: Math companion symbols declared on input line 29.
-LaTeX Info: Redefining \degree on input line 29.
-LaTeX Info: Redefining \celsius on input line 29.
-Package gensymb Info: Using text companion symbols for \degree, \celsius and \perthousand on input line 29.
-LaTeX Info: Redefining \ohm on input line 29.
-Package gensymb Info: Using \textohm for \ohm on input line 29.
-Package gensymb Info: Using \textmu for \micro on input line 29.
+(Font)                  TS1/cmr/m/n --> TS1/cmr/b/n on input line 28.
+Package gensymb Info: Math companion symbols declared on input line 28.
+LaTeX Info: Redefining \degree on input line 28.
+LaTeX Info: Redefining \celsius on input line 28.
+Package gensymb Info: Using text companion symbols for \degree, \celsius and \perthousand on input line 28.
+LaTeX Info: Redefining \ohm on input line 28.
+Package gensymb Info: Using \textohm for \ohm on input line 28.
+Package gensymb Info: Using \textmu for \micro on input line 28.
  (c:/texlive/2022/texmf-dist/tex/latex/translations/translations-basic-dictionary-english.trsl
 File: translations-basic-dictionary-english.trsl (english translation file `translations-basic-dictionary')
 )
-Package translations Info: loading dictionary `translations-basic-dictionary' for `english'. on input line 29.
+Package translations Info: loading dictionary `translations-basic-dictionary' for `english'. on input line 28.
  (./Title.tex)
-LaTeX Font Info:    Trying to load font information for U+msa on input line 30.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 29.
  (c:/texlive/2022/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 30.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 29.
  (c:/texlive/2022/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) (./Sections/Intro/intro.tex) (./Sections/DataIntegretity/S1.tex
@@ -697,12 +697,12 @@ Package pdftex.def Info: Sections/DataIntegretity/Plots/orig.png  used on input 
 <Sections/ARIMA/Plots/ACF.png, id=58, 602.25pt x 351.3125pt>
 File: Sections/ARIMA/Plots/ACF.png Graphic file (type png)
 <use Sections/ARIMA/Plots/ACF.png>
-Package pdftex.def Info: Sections/ARIMA/Plots/ACF.png  used on input line 51.
+Package pdftex.def Info: Sections/ARIMA/Plots/ACF.png  used on input line 54.
 (pdftex.def)             Requested size: 244.63pt x 142.6989pt.
 <Sections/ARIMA/Plots/PACF.png, id=59, 602.25pt x 351.3125pt>
 File: Sections/ARIMA/Plots/PACF.png Graphic file (type png)
 <use Sections/ARIMA/Plots/PACF.png>
-Package pdftex.def Info: Sections/ARIMA/Plots/PACF.png  used on input line 56.
+Package pdftex.def Info: Sections/ARIMA/Plots/PACF.png  used on input line 59.
 (pdftex.def)             Requested size: 244.63pt x 142.6989pt.
  [2 <./Sections/DataIntegretity/Plots/orig.png>] (./Sections/ARIMA/Outputs/min1.txt) (./Sections/ARIMA/Outputs/min2.txt) (./Sections/ARIMA/Outputs/min3.txt)) (out/main.bbl) [3 <./Sections/ARIMA/Plots/ACF.png> <./Sections/ARIMA/Plots/PACF.png>] (out/main.aux)
 Package rerunfilecheck Info: File `main.out' has not changed.
@@ -717,7 +717,7 @@ Here is how much of TeX's memory you used:
  1141 hyphenation exceptions out of 8191
  72i,8n,77p,813b,1208s stack positions out of 10000i,1000n,20000p,200000b,200000s
 {c:/texlive/2022/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}<c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt8.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb>
-Output written on out/main.pdf (3 pages, 347859 bytes).
+Output written on out/main.pdf (3 pages, 341245 bytes).
 PDF statistics:
  157 PDF objects out of 1000 (max. 8388607)
  106 compressed objects within 2 object streams

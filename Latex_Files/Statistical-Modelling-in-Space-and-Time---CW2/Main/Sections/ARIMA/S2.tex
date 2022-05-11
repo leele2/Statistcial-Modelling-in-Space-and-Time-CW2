@@ -10,7 +10,7 @@ The first step in building an autoregressive (integrated) moving average (AR(I)M
     \end{equation*}
     \vfill
     \columnbreak
-    \noindent Integrated: d is the degree of differencing (the number of times the data have had past values subtracted)
+    \noindent Integrated: d is the degree of differencing (the number of times the data have had past values subtracted).
     \vfill
     \columnbreak
     Moving Average:
@@ -21,13 +21,16 @@ The first step in building an autoregressive (integrated) moving average (AR(I)M
     \columnbreak
 \end{multicols}
 
+Where $x_t$ represents the value measured at the $t^{\text{th}}$ time step ($\Delta t$) and $\epsilon_t$ are identical and independent realizations from a normal (Gaussian) distribution with zero mean and variance $\sigma^2$. 
+
 \subsection{Autoregressive Moving Average Model (ARMA)}
 
 An ARMA model only consist off the $\AR{p}$ and $\MA{q}$ often referred to as $\ARMA{p}{q}$ but is identical to \break$\ARIMA{p}{0}{q}$, expressed mathematically as:
 
 \begin{equation*}
-   \ARMA{p}{q} x_t  = \sum_{i=1}^p\alpha_ix_{t-i} + \sum_{i=0}^q\beta_i\epsilon_{t-i}
+   \ARMA{p}{q} : x_t  = \sum_{i=1}^p\alpha_ix_{t-i} + \sum_{i=0}^q\beta_i\epsilon_{t-i} \quad \text{where } \epsilon_t \sim \text{N}\left(0, \sigma^2\right)
 \end{equation*}
+
 Our problem then is to fit parameters $(p,q)$ that best describe the underlying process of data.
 
 \subsubsection{Finding optimal parameters}
@@ -76,4 +79,4 @@ However, upon trying values of $(p,q) \in [0,3]\times[0,7]$ and calculating both
     \item \input{Sections/ARIMA/Outputs/min3.txt}
 \end{itemize}
 
-We then conclude that the optimal parameters for our ARMA model are $\ARMA{0}{1}$.
+It is 
