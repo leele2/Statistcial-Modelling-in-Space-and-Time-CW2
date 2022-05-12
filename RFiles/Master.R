@@ -1,7 +1,7 @@
 #https://otexts.com/fpp2/seasonal-arima.html
 rm(list = ls())
 ############# Set as Source Directory #############
-source <- paste0("C:/Users/PC/OneDrive - University of Exeter/University of E",
+source <- paste0("C:/Users/dj-lu/OneDrive - University of Exeter/University of E",
     "xeter/05 - Fifth Year/Statistical Modelling in Space and Time/Coursework",
     "s/Coursework 2")
 #############                         #############

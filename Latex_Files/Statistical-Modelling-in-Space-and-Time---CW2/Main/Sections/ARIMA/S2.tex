@@ -45,7 +45,7 @@ It is possible that our data may have one of the parameters equal 0 meaning that
     \end{tabular}
 \end{center}
 \par\medskip
-The ACF and PACF functions of our data is shown in \autoref{S2fig:ACFPACF}. Taking a look at the ACF \autoref{S2fig:ACF} we see that we have two peaks at 0.25 and 1.00 (excluding peak at 0). Then looking at the PACF \autoref{S2fig:PACF} we only have one peak at 0.75. This could indicate that we have a $\MA{1}$ process with the peaks at 1.00 and 0.75 being attributed to noise.
+The ACF and PACF functions of our data is shown in \autoref{S2fig:ACFPACF}. Taking a look at the ACF \autoref{S2fig:ACF} we see that we have two peaks at 0.25 and 1.00 (excluding peak at 0). Then looking at the PACF \autoref{S2fig:PACF} we have one peak at 0.75 but also one peak just below the 95\% confidence interval at 0.25. Since any of these peaks could be down to noise, it is hard to exactly determine our parameters from this analysis alone.
 
 \begin{figure}[H]
     \centering
@@ -63,7 +63,7 @@ The ACF and PACF functions of our data is shown in \autoref{S2fig:ACFPACF}. Taki
 \label{S2fig:ACFPACF}
 \end{figure}
 
-However, upon trying values of $(p,q) \in [0,3]\times[0,7]$ and calculating both the AIC and BIC we get the following results:
+We will fit several ARMA models for varying values, $(p,q) \in [0,3]\times[0,7]$ and calculate both the AIC and BIC of the fit. This produces the following results:
 
 \begin{table}[H]
     \begin{center}
@@ -79,4 +79,13 @@ However, upon trying values of $(p,q) \in [0,3]\times[0,7]$ and calculating both
     \item \input{Sections/ARIMA/Outputs/min3.txt}
 \end{itemize}
 
-It is 
+It is worth mentioning that the models allowed for there to be a mean and the best fit was calculated by first using conditional-sum-of-squares to find starting values, then maximum likelihood.
+\nline
+Continuing with $p = 0$ and $q=1$, we shall take the residuals of our model and produce the following plots:
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.75\textwidth]{Sections/ARIMA/Plots/manual_res.png}
+    \caption{Residuals from our $\ARMA{0}{1}$ and their ACF and PACF.}
+    \label{S2fig:manual_res}
+\end{figure}

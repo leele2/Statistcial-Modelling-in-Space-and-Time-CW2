@@ -4,12 +4,14 @@ sav_dir <- paste0(source, "/Latex_Files/Statistical-Modelling-in-Space-and-Tim",
 ##          ##
 
 ## Plotting ACF and PACF ##
-png(paste0(sav_dir, "/Plots/ACF.png"), 600, 350)
+png(paste0(sav_dir, "/Plots/ACF.png"), i_sz[2], i_sz[1],
+    units = "in", res = i_sz[3])
 plot(acf(data_mean.ts, lag.max = 40),
      main = NA, xlab = "Lag (years)", cex.lab = i_sz[5])
 title(main = "ACF of Quarterly Means", cex.main = i_sz[5])
 dev.off()
-png(paste0(sav_dir, "/Plots/PACF.png"), 600, 350)
+png(paste0(sav_dir, "/Plots/PACF.png"), i_sz[2], i_sz[1],
+    units = "in", res = i_sz[3])
 plot(pacf(data_mean.ts, lag.max = 40),
      main = NA, xlab = "Lag (years)", cex.lab = i_sz[5])
 title(main = "PACF of Quarterly Means", cex.main = i_sz[5])
@@ -52,7 +54,20 @@ rm(aIc, bIc, sIc, tmp, p_vals, q_vals, i)
 write.table(as.data.frame(round(output, 2)) %>% rownames_to_column('p/q'),
             paste0(substr(sav_dir, 1, str_locate(sav_dir, "Main/")[2]),
             "S2tab1.csv"), quote = F, sep = ",", row.names = F)
-rm(output, sav_dir)
-
-fit <- Arima(data_mean.ts, order = c(mins[3, 1] - 1, 0 , mins[3, 2] - 1))
+rm(output)
+#Checking model
+fit.sIc <- Arima(data_mean.ts, order = c(mins[3, 1] - 1, 0 , mins[3, 2] - 1))
+png(paste0(sav_dir, "/Plots/manual_res.png"), i_sz[2], i_sz[1],
+    units = "in", res = i_sz[3])
+residuals(fit.sIc) %>% ggtsdisplay(main = paste0("Residauls of ARMA(",
+  mins[3, 1] - 1, ",", mins[3, 2] - 1, ")"))
+dev.off()
+#Comparing to auto model
+png(paste0(sav_dir, "/Plots/manual_res.png"), 600, 350)
+fit.auto <- auto.arima(data_mean.ts, max.d = 0, seasonal = F)
+residuals(fit.auto) %>% ggtsdisplay()
+title(main = paste0("Residauls of ARMA(", fit.auto$arma[1], ",",
+  fit.auto$arma[2], ")"))
+dev.off()
+rm(sav_dir)
 ##                                        ##
