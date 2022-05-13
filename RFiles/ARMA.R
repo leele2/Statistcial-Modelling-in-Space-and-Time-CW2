@@ -1,6 +1,5 @@
 ## Preamble ##
-sav_dir <- paste0(source, "/Latex_Files/Statistical-Modelling-in-Space-and-Tim",
-  "e---CW2/Main/Sections/ARIMA")
+sav_dir <- paste0(source, "/Latex_Files/Main/Sections/ARIMA")
 ##          ##
 
 ## Plotting ACF and PACF ##
@@ -50,24 +49,62 @@ for (i in c(1:3)){
 output = sIc
 colnames(output) <- 0:(length(q_vals) - 1)
 rownames(output) <- 0:(length(p_vals) - 1)
-rm(aIc, bIc, sIc, tmp, p_vals, q_vals, i)
+rm(aIc, bIc, sIc, p_vals, q_vals, i)
 write.table(as.data.frame(round(output, 2)) %>% rownames_to_column('p/q'),
             paste0(substr(sav_dir, 1, str_locate(sav_dir, "Main/")[2]),
             "S2tab1.csv"), quote = F, sep = ",", row.names = F)
 rm(output)
+##                                        ##
+
+## Building and testing ARMA model ##
 #Checking model
 fit.sIc <- Arima(data_mean.ts, order = c(mins[3, 1] - 1, 0 , mins[3, 2] - 1))
 png(paste0(sav_dir, "/Plots/manual_res.png"), i_sz[2], i_sz[1],
     units = "in", res = i_sz[3])
-residuals(fit.sIc) %>% ggtsdisplay(main = paste0("Residauls of ARMA(",
-  mins[3, 1] - 1, ",", mins[3, 2] - 1, ")"))
+tmp <- checkresiduals(fit.sIc, plot = T)
 dev.off()
+capture.output(cat(round(tmp$p.value, 2)), file = paste0(sav_dir,
+  "/Outputs/manual_res.txt"))
 #Comparing to auto model
-png(paste0(sav_dir, "/Plots/manual_res.png"), 600, 350)
 fit.auto <- auto.arima(data_mean.ts, max.d = 0, seasonal = F)
-residuals(fit.auto) %>% ggtsdisplay()
-title(main = paste0("Residauls of ARMA(", fit.auto$arma[1], ",",
-  fit.auto$arma[2], ")"))
+png(paste0(sav_dir, "/Plots/auto_res.png"), i_sz[2], i_sz[1],
+    units = "in", res = i_sz[3])
+tmp <- checkresiduals(fit.auto, plot = T)
 dev.off()
-rm(sav_dir)
-##                                        ##
+capture.output(cat(round(tmp$p.value, 2)), file = paste0(sav_dir,
+  "/Outputs/auto_res.txt"))
+#Producing forecast
+png(paste0(sav_dir, "/Plots/forecast.png"), i_sz[2], i_sz[1],
+    units = "in", res = i_sz[3])
+tmp <- autoplot(forecast(fit.auto, h = 6), ylab = "Overturning Stength (Sv)") +
+ theme0 + theme(plot.margin = unit(c(0.5,0.5,0.5,0.7), "cm"))
+print(tmp)
+dev.off()
+rm(mins, )
+##                                 ##
+
+## Building and testing ARIMA model ##
+fit.auto.arima <- auto.arima(data_mean.ts, seasonal = F)
+png(paste0(sav_dir, "/Plots/auto__arima_res.png"), i_sz[2], i_sz[1],
+    units = "in", res = i_sz[3])
+tmp <- checkresiduals(fit.auto.arima, plot = T)
+dev.off()
+capture.output(cat(round(tmp$p.value, 2)), file = paste0(sav_dir,
+  "/Outputs/auto_arima_res.txt"))
+fit.auto.arima2 <- auto.arima(data_mean.ts, seasonal = F, d = 2)
+png(paste0(sav_dir, "/Plots/auto__arima_res2.png"), i_sz[2], i_sz[1],
+    units = "in", res = i_sz[3])
+tmp <- checkresiduals(fit.auto.arima2, plot = T)
+dev.off()
+capture.output(cat(round(tmp$p.value, 2)), file = paste0(sav_dir,
+  "/Outputs/auto_arima_res2.txt"))
+#Producing forecast
+png(paste0(sav_dir, "/Plots/forecast_arima.png"), i_sz[2], i_sz[1],
+    units = "in", res = i_sz[3])
+tmp <- autoplot(forecast(fit.auto.arima2, h = 6), 
+  ylab = "Overturning Stength (Sv)") + 
+  theme0 + theme(plot.margin = unit(c(0.5,0.5,0.5,0.7), "cm"))
+print(tmp)
+dev.off()
+rm(sav_dir, tmp, fit.sIc, fit.auto.arima, fit.auto.arima2)
+##                                  ##

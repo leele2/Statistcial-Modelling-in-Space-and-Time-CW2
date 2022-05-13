@@ -4,3 +4,11 @@ ARMA
 PACF
 ARIMA
 stationarity
+Ljung-Box
+arima
+AICc
+minimisation
+MLE
+Akaike
+Hyndman-Khandakar
+Sv

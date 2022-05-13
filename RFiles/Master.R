@@ -13,7 +13,7 @@ if (!require(pacman)){
     library(pacman)
 }
 p_load("httpgd", "ggplot2", "car", "ggfortify", "zoo", "tibble", "stringr",
-    "forecast")
+    "forecast", dlm)
 #Graphical variables
 # Height, Width, DPI, ggplot font size, base font size (%)
 i_sz <- 5 * (1)
@@ -35,4 +35,8 @@ source("Validate.R")
 
 ## Building ARMA Model ##
 source("ARMA.R")
+##                     ##
+
+## Building DLM Model ##
+source("DLM.R")
 ##                     ##

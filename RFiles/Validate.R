@@ -1,6 +1,5 @@
 ## Preamble ##
-sav_dir <- paste0(source, "/Latex_Files/Statistical-Modelling-in-Space-and-Ti",
-  "me---CW2/Main/Sections/DataIntegretity")
+sav_dir <- paste0(source, "/Latex_Files/Main/Sections/DataIntegretity")
 ##          ##
 
 ## Validating Data ##

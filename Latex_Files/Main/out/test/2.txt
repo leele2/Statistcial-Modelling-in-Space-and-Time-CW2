@@ -1,0 +1,9 @@
+ARIMA(4,2,0)
+
+Coefficients:
+          ar1      ar2      ar3      ar4
+      -1.0195  -1.3529  -0.9128  -0.5612
+s.e.   0.1473   0.1666   0.1627   0.1527
+
+sigma^2 = 9.443:  log likelihood = -96.26
+AIC=202.51   AICc=204.39   BIC=210.7
