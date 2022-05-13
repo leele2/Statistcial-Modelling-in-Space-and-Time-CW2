@@ -1,17 +1,18 @@
 # Fdb version 3
-["bibtex out/main"] 1652422572 "out/main.aux" "out/main.bbl" "out/main" 1652422814
+["bibtex out/main"] 1652464032 "out/main.aux" "out/main.bbl" "out/main" 1652464068
   "c:/texlive/2022/texmf-dist/bibtex/bst/base/alpha.bst" 1651615864 23907 a5f93555796fb564b924339521f10a7c ""
   "mybibliography.bib" 1652407167 3357 76d1568daf187143e9784a75a0c1c1d2 ""
-  "out/main.aux" 1652422813 10312 b6a3845cf03753f2f022ac6a7adff62e "pdflatex"
+  "out/main.aux" 1652464067 10455 9cc57f0674cc1d12bc0c703dda97c95e "pdflatex"
   (generated)
   "out/main.bbl"
   "out/main.blg"
-["pdflatex"] 1652422808 "c:/Users/dj-lu/OneDrive - University of Exeter/University of Exeter/05 - Fifth Year/Statistical Modelling in Space and Time/Courseworks/Coursework 2/Latex_Files/Main/main.tex" "out/main.pdf" "main" 1652422814
-  "../../RFiles/ARMA.R" 1652416658 4422 022ad390b4aaef0cac390402e44417e6 ""
+["pdflatex"] 1652464061 "c:/Users/dj-lu/OneDrive - University of Exeter/University of Exeter/05 - Fifth Year/Statistical Modelling in Space and Time/Courseworks/Coursework 2/Latex_Files/Main/main.tex" "out/main.pdf" "main" 1652464068
+  "../../RFiles/ARMA.R" 1652463978 4416 27f177dc178018655f995e2348a3bd1b ""
   "../../RFiles/DLM.R" 1652419496 1739 336e0f6369c3593c7089a91590c6a3c4 ""
   "../../RFiles/Master.R" 1652420545 1315 f65d348893af981783c2aed1157c3512 ""
   "../../RFiles/Read_data.R" 1652018159 613 428f09bf768cea207b7d17c43e293367 ""
-  "Appendix/appendix.tex" 1652422807 415 b8c7c776e39fac73f31f18f937d4fc03 ""
+  "../../RFiles/Validate.R" 1652396415 1924 aab714dc3d56aa007ccf4fb11c0f7817 ""
+  "Appendix/appendix.tex" 1652464023 471 8cbc9609214d1a57678f908ce235bbb0 ""
   "PreAmble/PreAmble.tex" 1652420369 2671 5e6fa2bb363acc07d8ff605c840cc1c2 ""
   "PreAmble/R_format.tex" 1651605118 304 e49a757499c191144a1806806405776d ""
   "S2tab1.csv" 1652409183 252 526ce7e3bcd111977ad2b4f8528e26dd ""
@@ -29,7 +30,7 @@
   "Sections/ARIMA/Plots/forecast.png" 1652409185 66430 3cd29145c02e8c65cfcdf2090ce44166 ""
   "Sections/ARIMA/Plots/forecast_arima.png" 1652409188 57522 696994f9da581cd0c5b25b1a5fad3cba ""
   "Sections/ARIMA/Plots/manual_res.png" 1652409183 67895 ede656a1560fafa9a769a77f9397e87d ""
-  "Sections/ARIMA/S2.tex" 1652420527 10928 7bc224c918447815acc83a91f06f9d83 ""
+  "Sections/ARIMA/S2.tex" 1652464060 10912 71c04bfb018f20de1fc89af9424ac8f9 ""
   "Sections/DLM/Plots/forecast.png" 1652419497 57080 362ae48040cdacd1498811d52008fb0f ""
   "Sections/DLM/Plots/trends.png" 1652419497 43545 4a0bb6b0d742e082b9f8c088a87a7814 ""
   "Sections/DLM/S3.tex" 1652421964 2569 0917bae22f738a57880ef0315f582db7 ""
@@ -41,7 +42,7 @@
   "Sections/DataIntegretity/S1.tex" 1651798173 3357 8ea905ea8c21f844ff87a7f5796ba303 ""
   "Sections/Intro/intro.tex" 1651701727 655 903f0792df1512dfdf7b2fc45f7e017e ""
   "Title.tex" 1651605118 144 c43bcf42b607cb28cc11236283f3019a ""
-  "c:/Users/dj-lu/OneDrive - University of Exeter/University of Exeter/05 - Fifth Year/Statistical Modelling in Space and Time/Courseworks/Coursework 2/Latex_Files/Main/main.tex" 1652422236 1092 7d893d5d6a0b9413fc76e449fb342e28 ""
+  "c:/Users/dj-lu/OneDrive - University of Exeter/University of Exeter/05 - Fifth Year/Statistical Modelling in Space and Time/Courseworks/Coursework 2/Latex_Files/Main/main.tex" 1652464027 1092 7d893d5d6a0b9413fc76e449fb342e28 ""
   "c:/texlive/2022/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc" 1651616077 2900 1537cc8184ad1792082cd229ecc269f4 ""
   "c:/texlive/2022/texmf-dist/fonts/map/fontname/texfonts.map" 1651616703 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "c:/texlive/2022/texmf-dist/fonts/tfm/jknappen/ec/tcrm0500.tfm" 1651616439 1536 b3387106d9afecbfe14bde2de6eadf47 ""
@@ -211,9 +212,9 @@
   "c:/texlive/2022/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1651619718 4448422 1500026d8769a728f5ac0b9ab1c4bf6e ""
   "c:/texlive/2022/texmf-var/web2c/pdftex/pdflatex.fmt" 1651619875 2827841 64974fbd964a41f54612e9fd79100cf1 ""
   "c:/texlive/2022/texmf.cnf" 1651619694 713 baa45e065482d44c4cd81b98ef72c63b ""
-  "out/main.aux" 1652422813 10312 b6a3845cf03753f2f022ac6a7adff62e "pdflatex"
-  "out/main.bbl" 1652422573 1281 c2099378b6736ee7d2baae637d8f8cb1 "bibtex out/main"
-  "out/main.out" 1652422813 2306 f5a9174fbb862b807675a0aa870de0aa "pdflatex"
+  "out/main.aux" 1652464067 10455 9cc57f0674cc1d12bc0c703dda97c95e "pdflatex"
+  "out/main.bbl" 1652464033 1281 c2099378b6736ee7d2baae637d8f8cb1 "bibtex out/main"
+  "out/main.out" 1652464067 2306 f5a9174fbb862b807675a0aa870de0aa "pdflatex"
   (generated)
   "out/main.aux"
   "out/main.log"

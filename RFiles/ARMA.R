@@ -42,7 +42,7 @@ mins[3, ] <- which(sIc == min(sIc), arr.ind = TRUE)
 #Outputting minimum combinations
 tmp <- c("AIC", "BIC", "Sum of AIC and BIC")
 for (i in c(1:3)){
-  output <- paste0("The minimum pair hello of $(p,q)$ when minimizing the ", tmp[i],
+  output <- paste0("The minimum pair of $(p,q)$ when minimizing the ", tmp[i],
                    " is $p$ = ", mins[i, 1] - 1, " and $q$ = ", mins[i, 2] - 1)
   writeLines(output, paste0(sav_dir, "/Outputs/", "min", i, ".txt"))
 }
