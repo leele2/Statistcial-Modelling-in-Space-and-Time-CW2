@@ -1,9 +1,0 @@
-ARIMA(0,0,2) with non-zero mean
-
-Coefficients:
-         ma1      ma2     mean
-      0.6323  -0.2403  16.8684
-s.e.  0.1461   0.1367   0.5528
-
-sigma^2 = 6.835:  log likelihood = -94.29
-AIC=196.57   AICc=197.72   BIC=203.33
