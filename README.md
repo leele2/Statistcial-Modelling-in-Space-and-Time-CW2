@@ -1,4 +1,4 @@
-# Mathematics-in-Business-Project
+#Coursework 2
 
 ![page0](Latex_Files/Main/z_output/Images/page0.png)
 ***
