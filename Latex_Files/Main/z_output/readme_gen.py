@@ -3,7 +3,7 @@ from pdf2image import convert_from_path
 from pathlib import Path
 from os.path import exists
 from os import mkdir
-
+import shutil
 # Directories
 cwd = str(Path(__file__).parent.absolute())
 pdf_file = cwd + "\\main.pdf"
@@ -30,3 +30,5 @@ for i in range(len(images)):
 
 with open(readme_dir + "/README.md", "w") as output:
     output.write("\n".join(txt_out))
+# Copy pdf to main directory
+shutil.copy(pdf_file, readme_dir + "/report.pdf")
